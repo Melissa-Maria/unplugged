@@ -85,12 +85,17 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== *
+   ========================================================================== */
+
+.content-wrapper {
+  width: 90%;
+}
 
  /* -------------------- Base Header - Footer Styles -------------------- */
 header {
   display: flex;
   justify-content: center;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -98,9 +103,20 @@ header .content-wrapper {
   justify-content:center;
   align-items: center;
   flex-flow:row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width:100%;
+}
+
+header nav {
+  width:60%;
 }
 
 header nav ul {
+  width:55%;
+  margin:20px 0 15px 0;
   display:flex;
   justify-content:space-around;
 }
@@ -110,6 +126,11 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .social-icons {
@@ -122,8 +143,11 @@ footer .social-icons p {
   display:flex;
   justify-content: center;
   align-items: center;
+ }
 
-}
+ footer p {
+  margin: 0;
+ }
 
 /*---- Mobile Styles- Homepage ----*/
 
@@ -142,6 +166,10 @@ aside {
   justify-content: center;
 }
 
+.features h2 {
+  margin-bottom: 60px;
+}
+
 .features .features-items {
   display:flex;
   justify-content: center;
@@ -149,12 +177,30 @@ aside {
   flex-flow: row wrap;
 }
 
+.features article {
+  width: 60%;
+  margin:30px 0;
+}
+
+.feautures p {
+  margin: 0;
+}
+
 .reviews {
   display:flex;
   justify-content: center;
 }
 
-/*---- About Page ----*/
+.reviews h2 {
+  margin: 50px 0 40px 0;
+}
+
+.reviews h3 {
+  width: 52%;
+  margin: 20px 0;
+}
+
+/*---- Mobile Styles- About Page ----*/
 
 .mission {
   display:flex;
@@ -166,11 +212,19 @@ aside {
   justify-content: center;
 }
 
-/*---- FAQ Page ----*/
+.contact-content p {
+  margin:0 ;
+}
+
+/*---- Mobile Styles- FAQ Page ----*/
 
 .faq {
   display:flex;
   justify-content: center;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
 }
 
 .faq .content-wrapper {
@@ -178,6 +232,10 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 /* ==========================================================================
