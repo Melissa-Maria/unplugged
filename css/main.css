@@ -89,6 +89,7 @@ textarea {
 
 .content-wrapper {
   width: 90%;
+  margin: 50px 0;
 }
 
  /* -------------------- Base Header - Footer Styles -------------------- */
@@ -130,7 +131,10 @@ footer {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -148,6 +152,10 @@ footer .social-icons p {
  footer p {
   margin: 0;
  }
+
+ footer .copyright {
+  margin: 20px 0;
+}
 
 /*---- Mobile Styles- Homepage ----*/
 
@@ -421,7 +429,7 @@ aside {
    .mission-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 20px;
 }
 
@@ -459,9 +467,65 @@ aside {
      }
 
    
-    
    @media only screen and (min-width: 1200px) {
      /*Desktop styles here*/
+
+     /* General Styles */
+    .content-wrapper {
+      max-width: 960px;
+    }
+
+    /* Header */
+    header {
+      padding: 15px 0;
+    }
+
+    /* Hero Area */
+    .hero-area h1 {
+      width: 70%;
+    }
+
+    /* Aside */
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+     width: 30%;
+    }
+
+    /*Features */
+    .features h2 {
+      width: 90%;
+    }
+
+    .features article {
+      flex-basis: 33%;
+    }
+
+    /* Reviews */
+    .reviews article div {
+      width: 42%;
+    }
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+
+   .mission h2,
+   .contact-section .content-wrapper h2 {
+    width: 92%;
+   }
+
+   /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+   .faq h2 {
+    width: 100%;
+   }
+
    }
 
 /* ==========================================================================
