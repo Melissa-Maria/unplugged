@@ -98,6 +98,7 @@ body {
   font-size: 1em;
   text-align: left;
   color: #e2e3ed;
+  background-color: #202322;
 }
 
 ul,
@@ -116,6 +117,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -164,15 +166,15 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  width: 60%;
+}
+
 .header-divider {
   background: #3a3a3a;
   height: 1px;
   width: 100%;
   margin: 10px 0 20px 0;
-}
-
-header figure {
-  width: 60%;
 }
 
 header nav {
@@ -242,20 +244,19 @@ footer .copyright {
 
 /*-- Hero Area --*/
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
-  background-image: url('../img/unplugged-retreat.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
 }
 
 .hero-area h1 {
   font-size: 2.25em;
   line-height: 1.2;
   font-weight: 500;
-  font-size: 'Poppins', Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
 }
 
 /*-- Aside --*/
@@ -295,7 +296,7 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
-  background-image: url('../img/unplugged-retreat-features.jpg');
+  background: url('../img/unplugged-retreat-features.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -308,12 +309,13 @@ input[type=button] {
 .features article {
   width: 63%;
   margin: 30px 0;
+  justify-content: center;
+  text-align: center;
 }
 
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -322,7 +324,7 @@ input[type=button] {
   margin-bottom: 40px;
 }
 
-.feautures p {
+.features p {
   margin: 0;
   text-align: center;
 }
@@ -591,7 +593,7 @@ input[type=button] {
   /* Reviews */
 
   .reviews figure {
-    width: 50%;
+    width:49%;
   }
 
   .reviews article {
